@@ -1,7 +1,7 @@
 {
   "name": "redux-crud-action-types",
   "version": "1.0.0",
-  "description": "A simple lib help your define redux action type in easy way.",
+  "description": "A simple lib help your define redux action type in easy way",
   "main": "lib/redux-crud-action-types.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src -d lib",
