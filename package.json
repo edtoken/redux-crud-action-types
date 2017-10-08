@@ -1,0 +1,45 @@
+{
+  "name": "redux-crud-action-types",
+  "version": "1.0.0",
+  "description": "A simple lib help your define redux action type in easy way.",
+  "main": "lib/redux-crud-action-types.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src -d lib",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/edtoken/redux-crud-action-types.git"
+  },
+  "keywords": [
+    "redux",
+    "react",
+    "crud",
+    "redux-crud",
+    "redux-ajax",
+    "ajax"
+  ],
+  "author": "Eduard Titov <editied@gmail.com>",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/edtoken/redux-crud-action-types/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/edtoken/redux-crud-action-types/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1",
+    "should": "^13.1.1",
+    "standart": "^6.1.0"
+  }
+}
