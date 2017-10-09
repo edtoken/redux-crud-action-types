@@ -46,5 +46,6 @@ create.prefix = '@crud'
  * @returns {string}
  */
 export const parse = (type) => {
+  type = ('' + type) // transform to primitive
   return type.substr(type.indexOf(create.prefix)).split('/').slice(3).join('/')
 }

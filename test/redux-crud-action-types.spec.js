@@ -63,4 +63,10 @@ describe('create', function () {
       isValidError.should.be.equal(true)
     }
   })
+
+  it('should be parse default value', function () {
+    const result = create('api/model')
+
+    parse(result).should.be.equal('api/model')
+  })
 })
