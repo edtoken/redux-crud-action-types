@@ -5,18 +5,37 @@ let _uniqueId = 0
  * @param type short action type name
  * @returns {{PENDING: string, SUCCESS: string, ERROR: string}}
  */
-export const create = (type) => {
+export const create = function (type) {
   const PENDING = `${create.prefix}/pending/id${_uniqueId}/${type}`
   const SUCCESS = `${create.prefix}/success/id${_uniqueId}/${type}`
   const ERROR = `${create.prefix}/error/id${_uniqueId}/${type}`
 
   _uniqueId += 1
 
-  return {
-    PENDING,
-    SUCCESS,
-    ERROR
+  const toString = () => {
+    return PENDING
   }
+
+  return Object.create({
+    toString,
+    valueOf: toString
+  }, {
+    PENDING: {
+      writable: false,
+      configurable: false,
+      value: PENDING
+    },
+    SUCCESS: {
+      writable: false,
+      configurable: false,
+      value: SUCCESS
+    },
+    ERROR: {
+      writable: false,
+      configurable: false,
+      value: ERROR
+    }
+  })
 }
 
 create.prefix = '@crud'

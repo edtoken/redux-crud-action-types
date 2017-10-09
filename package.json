@@ -1,9 +1,11 @@
 {
   "name": "redux-crud-action-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple lib help your define redux action type in easy way",
   "main": "lib/redux-crud-action-types.js",
   "scripts": {
+    "lint": "eslint --color src",
+    "lint:fix": "eslint --fix src --ext .js,.jsx src",
     "build": "./node_modules/.bin/babel src -d lib",
     "test": "mocha --compilers js:babel-register"
   },
