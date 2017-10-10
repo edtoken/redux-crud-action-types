@@ -5,7 +5,7 @@ let _uniqueId = 0
  * @param type short action type name
  * @returns {{PENDING: string, SUCCESS: string, ERROR: string}}
  */
-export const create = function (type) {
+const create = function (type) {
   const PENDING = `${create.prefix}/pending/id${_uniqueId}/${type}`
   const SUCCESS = `${create.prefix}/success/id${_uniqueId}/${type}`
   const ERROR = `${create.prefix}/error/id${_uniqueId}/${type}`
@@ -45,7 +45,12 @@ create.prefix = '@crud'
  * @param type
  * @returns {string}
  */
-export const parse = (type) => {
+const parse = (type) => {
   type = ('' + type) // transform to primitive
   return type.substr(type.indexOf(create.prefix)).split('/').slice(3).join('/')
+}
+
+module.exports = {
+  create,
+  parse
 }
