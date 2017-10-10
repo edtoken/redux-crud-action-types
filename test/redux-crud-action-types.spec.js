@@ -57,10 +57,7 @@ describe('create', function () {
     try {
       result.PENDING = 'white new value of argument'
     } catch (e) {
-      const isValidError = (e.message.indexOf('Cannot assign to read only property \'PENDING\' of object ') > -1)
-
       result.PENDING.should.be.equal('@crud/pending/id3/api/model')
-      isValidError.should.be.equal(true)
     }
   })
 
