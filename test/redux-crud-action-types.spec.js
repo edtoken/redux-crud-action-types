@@ -66,4 +66,31 @@ describe('create', function () {
 
     parse(result).should.be.equal('api/model')
   })
+
+  it('should be primitive case', function () {
+
+    let r1 = create('api/model') // @crud/pending/id5/api/model
+    let r2 = create('api/model') // @crud/pending/id6/api/model
+    let r3 = create('api/model') // @crud/pending/id7/api/model
+
+    let results = [r1, r2, r3]
+
+    for (let i = 0; i < results.length; i++) {
+      let result = results[i]
+      switch (result) {
+        case r1: // @crud/pending/id5/api/model
+          result.PENDING.should.be.equal('@crud/pending/id5/api/model')
+          break
+
+        case r2: // @crud/pending/id6/api/model
+          result.PENDING.should.be.equal('@crud/pending/id6/api/model')
+          break
+
+        case r3: // @crud/pending/id7/api/model
+          result.PENDING.should.be.equal('@crud/pending/id7/api/model')
+          break
+      }
+    }
+
+  })
 })
