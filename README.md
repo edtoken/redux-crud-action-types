@@ -58,6 +58,7 @@ export const reducer = (state, action) => {
 ```
 
 ### Reducer after
+about case `USER` see [LINK](https://github.com/edtoken/redux-crud-action-types/blob/master/test/redux-crud-action-types.spec.js#L70) 
 ```
 //reducer.js 
 
@@ -65,7 +66,7 @@ import { USER } from './actionTypes'
 
 export const reducer = (state, action) => {
   switch (action.type) {
-    case USER:
+    case USER: // or case USER.PENDGIN
       //
       break
     case USER.SUCCESS:
