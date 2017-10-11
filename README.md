@@ -66,7 +66,7 @@ import { USER } from './actionTypes'
 
 export const reducer = (state, action) => {
   switch (action.type) {
-    case USER: // or case USER.PENDGIN
+    case USER: // or case USER.PENDING
       //
       break
     case USER.SUCCESS:
