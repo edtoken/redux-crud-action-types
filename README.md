@@ -1,5 +1,10 @@
 # redux-crud-action-types
-A simple lib help your define redux action type in easy way.
+A simple lib help your define redux action type in easy way.  
+Creates unique names for example:
+```
+export const USER = create('user') // @crud/pending/id0/user, @crud/success/id0/user, @crud/error/id0/user
+export const USER_SECOND = create('user') // @crud/pending/id1/user, @crud/success/id1/user, @crud/error/id1/user
+```
 
 [![Build Status](https://api.travis-ci.org/edtoken/redux-crud-action-types.svg?branch=master)](https://travis-ci.org/edtoken/redux-crud-action-types)
 
@@ -58,7 +63,8 @@ export const reducer = (state, action) => {
 ```
 
 ### Reducer after
-about case `USER` see [LINK](https://github.com/edtoken/redux-crud-action-types/blob/master/test/redux-crud-action-types.spec.js#L70) 
+about case `USER` see [LINK](https://github.com/edtoken/redux-crud-action-types/blob/master/test/redux-crud-action-types.spec.js#L70) and [LINK](https://github.com/edtoken/redux-crud-action-types/blob/master/src/redux-crud-action-types.js#L21)
+ 
 ```
 //reducer.js 
 

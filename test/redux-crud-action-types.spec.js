@@ -68,7 +68,6 @@ describe('create', function () {
   })
 
   it('should be primitive case', function () {
-
     let r1 = create('api/model') // @crud/pending/id5/api/model
     let r2 = create('api/model') // @crud/pending/id6/api/model
     let r3 = create('api/model') // @crud/pending/id7/api/model
