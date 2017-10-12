@@ -1,6 +1,6 @@
 # redux-crud-action-types
 A simple lib help your define redux action type in easy way.  
-Creates unique names for example:
+Create unique names for example:
 ```
 export const USER = create('user') // @crud/pending/id0/user, @crud/success/id0/user, @crud/error/id0/user
 export const USER_SECOND = create('user') // @crud/pending/id1/user, @crud/success/id1/user, @crud/error/id1/user
