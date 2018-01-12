@@ -7,10 +7,12 @@ export const USER_SECOND = create('user') // @crud/pending/id1/user, @crud/succe
 ```
 
 [![Build Status](https://api.travis-ci.org/edtoken/redux-crud-action-types.svg?branch=master)](https://travis-ci.org/edtoken/redux-crud-action-types)
+[![npm version](https://badge.fury.io/js/redux-crud-action-types.svg)](https://badge.fury.io/js/redux-crud-action-types)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d795ac0152904aa4c02b/maintainability)](https://codeclimate.com/github/edtoken/redux-crud-action-types/maintainability)
+[![HitCount](http://hits.dwyl.com/edtoken/redux-crud-action-types.svg)](http://hits.dwyl.com/edtoken/redux-crud-action-types)    
 
-[![NPM](https://nodei.co/npm/redux-crud-action-types.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/redux-crud-action-types/)
-
-[![NPM](https://nodei.co/npm-dl/redux-crud-action-types.png?height=3)](https://nodei.co/npm/redux-crud-action-types/)
+[![NPM](https://nodei.co/npm/redux-crud-action-types.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/redux-crud-action-types/)        
+[![NPM](https://nodei.co/npm-dl/redux-crud-action-types.png?height=3)](https://nodei.co/npm/redux-crud-action-types/)  
 
 
 ## Install
